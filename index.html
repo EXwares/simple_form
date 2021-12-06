@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <script type="text/javascript" src="form.js"></script>
+  <head>
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Exwares Gadget Delivery Form</title>-->
+
+    
+
+    <!-- Bootstrap core CSS -->
+
+    <style>
+        .container{
+        background-color: whitesmoke;
+        padding: 0px;
+        max-width: 100%;
+        font-size: 100%;
+      }
+      .py-5{
+        text-align: center;
+      }
+      .lead2{
+        font-size: 100%;
+        font-weight: 50;
+        font-family: calibri light;
+      }
+      .g-5 {
+        display: flex;
+        justify-content: space-around;
+      
+      }
+      .name-container{
+        display: flex;
+        justify-content: space-between;
+      }
+      #firstName{
+        width: 150px;
+        height: 10px;
+      }
+      #lastName{
+        width: 150px;
+        height: 10px;
+
+      }
+      .g-3{
+        display: block;
+      }
+      .atspan{
+        border: 1px solid grey;;
+        border-radius: 10%;
+        padding: 0.4%;
+        background-color: rgb(236, 236, 236);
+        
+      }
+      #username{
+        width: 80%;
+        height: 10px;
+      }
+      #email{
+        width: 100%;
+        height: 10px;
+      }
+      .location{
+        display: flex;
+        justify-content: space-between;
+      }
+      #country{
+        height: 20px;
+      }
+      #state{
+        height: 20px;
+      }
+      #zip{
+        height: 10px;
+      }
+      .expirationdate-cvv{
+        display: flex;
+        justify-content: space-between;
+      }
+      .card-details{
+        display: flex;
+        justify-content: space-between;
+      }
+      .btn-lg{
+        color: white;
+        background-color: blue;
+        width: 50vh;
+        border: 2%;
+      }
+      .cart{
+        border: 1px solid grey;
+        border-radius: 1%;
+        background-color: white;
+  
+      }
+      .text-primary{
+        color: blue;
+        padding-right: 50%;
+      }
+      .badge{
+        border-radius: 50%;
+        background-color: blue;
+        color: white;
+        padding: 2%;
+      }
+      .product-name-div{
+        display: flex;
+
+      }
+      .second-product-div{
+        border-top: 1px solid grey;
+        display: flex;
+
+      }
+      .third-item-div{
+        border-top: 1px solid grey;
+        display: flex;
+
+      }
+      .promo-code-div{
+        border-top: 1px solid grey;
+        display: flex;
+        background-color: whitesmoke;
+        color: green;
+
+      }
+      .sumation-div{
+        border-top: 1px solid grey;
+        display: flex;
+
+      } 
+      .cost{
+        text-align: end;
+        padding-top: 20%;
+        padding-left: 45%;
+        
+      }
+      .promocode-promocode-card{
+        padding-top: 2px;
+      }
+      .btn-secondary{
+        background-color: rgb(97, 96, 96);
+        color: white;
+      }
+      .footer-list{
+        display: inline-flex;
+      }
+      .footer-li{
+        list-style: none;
+      }
+    </style> 
+    
+
+    
+    <!-- Custom styles for this template -->
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <img class="d-block mx-auto mb-4" src="exwareslogo.png" alt=""  width ="20%"; height ="10%"; >
+          <h2 class="lead">Delivery Form</h2>
+          <p class="lead2">The form below ought to be filled properly with valid information,any suspicious act will be reported.</p>
+        </div>
+    
+        <div class="row g-5">
+          
+          <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Billing address</h4>
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="name-container">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First name</label><br>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                     <!-- Valid first name is required.-->
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last name</label><br>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      <!--Valid last name is required.-->
+                    </div>
+                  </div>
+                
+                </div>
+    
+                <div class="col-12">
+                  <label for="username" class="form-label">Username</label>
+                  <div class="input-group has-validation form-control">
+                    <span class="atspan">@</span>
+                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                  </div>
+                  <div class="invalid-feedback">
+                      <!--Your username is required.-->
+                    </div>
+                 
+                </div>
+    
+                <div class="col-12">
+                  <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label><br>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                  <div class="invalid-feedback">
+                   <!-- Please enter a valid email address for shipping updates.-->
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label><br>
+                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                  <div class="invalid-feedback">
+                    <!--Please enter your shipping address.-->
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                  <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label><br>
+                  <input type="text" class="form-control" id="address2" placeholder="Apartment or suite" required>
+                </div>
+                <div class="location">
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">State</label><br>
+                    <select class="form-select" id="state" required>
+                      <option value="abuja">Abuja</option>
+                      <option value="lagos">Lagos</option>
+                      <option value="cross_river">Cross River</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      <!--Please select a valid country.-->
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">State</label><br>
+                    <select class="form-select" id="state" required>
+                      <option value="">Choose...</option>
+                      <option>California</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      <!--Please provide a valid state.-->
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="zip" class="form-label">Zip</label><br>
+                    <input type="text" class="form-control" id="zip" placeholder="" required>
+                    <div class="invalid-feedback">
+                      <!--Zip code required.-->
+                    </div>
+                </div>
+    
+              </div>
+               </div>
+    
+              <hr class="my-4">
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="same-address" required>
+                <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+              </div>
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info" requred>
+                <label class="form-check-label" for="save-info">Save this information for next time</label>
+              </div>
+    
+              <hr class="my-4">
+    
+              <h4 class="mb-3">Payment</h4>
+    
+              <div class="my-3">
+                <div class="form-check">
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                  <label class="form-check-label" for="credit">Credit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="debit">Debit card</label>
+                </div>
+                <div class="form-check">
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                  <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+    
+              <div class="row gy-3">
+               <div class="card-details">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Name on card</label><br>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required><br>
+                  <small class="text-muted">Full name as displayed on card</small>
+                  <div class="invalid-feedback">
+                    <!--Name on card is required-->
+                  </div>
+                </div>
+    
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Credit card number</label><br>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                  <div class="invalid-feedback">
+                    <!--Credit card number is required-->
+                  </div>
+                </div>
+               </div>
+    
+                <div class="expirationdate-cvv">
+                  <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label">Expiration</label><br>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                    <div class="invalid-feedback">
+                      <!--Expiration date required-->
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label><br>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                    <div class="invalid-feedback">
+                      <!--Security code required-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <hr class="my-4">
+    
+              <button class="w-100 btn btn-primary btn-lg" type="submit" onclick="checkNameLength()">Continue to checkout</button>
+            </form>
+          </div>
+          <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary">Your cart</span>
+              <span class="badge bg-primary rounded-pill">3</span>
+            </h4>
+            <div class="cart">
+                <div class="product-name-div">
+                    <div>
+                      <h6 class="my-0">Product name</h6>
+                      <small class="text-muted">Brief description</small>
+                    </div>
+                    <div class="cost">$12</div>
+                </div>
+                <div class="second-product-div">
+                    <div>
+                      <h6 class="my-0">Second product</h6>
+                      <small class="text-muted">Brief description</small>
+                    </div>
+                    <div class="cost">$8</div>
+                </div>
+                <div class="third-item-div">
+                    <div>
+                      <h6 class="my-0">Third item</h6>
+                      <small class="text-muted">Brief description</small>
+                    </div>
+                    <div class="cost">$5</div>
+                </div>
+                <div class="promo-code-div">
+                    <div class="text-success">
+                      <h6 class="my-0">Promo code</h6>
+                      <small>EXAMPLECODE</small>
+                    </div>
+                    <div class=" cost">−$5</div>
+                </div>
+                <div class="sumation-div">
+                    <span>Total (USD)</span>
+                    <span><strong class="cost">$20</strong></span>
+                </div>
+            </div>
+    
+           <div promocode-card>
+            <form class="card p-2">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Promo code">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </form>
+           </div>
+          </div>
+        </div>
+      </main>
+    
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <center><p class="mb-1">&copy; 2017–2021 Company Name</p>
+        <ul class="footer-list">
+          <li class="list-inline-item footer-li"><a href="#">Privacy</a></li>
+          <li class="list-inline-item footer-li"><a href="#">Terms</a></li>
+          <li class="list-inline-item footer-li"><a href="#">Support</a></li>
+        </ul></center>
+      </footer>
+    </div>
+    
+
+        
+    
+          <script src=""></script>
+    
+    
+  </body>
+</html>
